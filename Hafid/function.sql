@@ -23,3 +23,4 @@ BEGIN
    RETURN total;
 END;
 $$;
+-- SELECT penghasilan_pegawai('Emily','Lucas');
