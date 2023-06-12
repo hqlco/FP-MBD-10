@@ -9,4 +9,4 @@ WITH top_10_pelanggan AS(
 SELECT p.nama_depan, p.nama_belakang, tp.total_transaksi
 FROM pelanggan p
 INNER JOIN top_10_pelanggan tp ON tp.pelanggan_id = p.id
-ORDER BY tp.pelanggan_id DESC
+ORDER BY tp.total_transaksi DESC
