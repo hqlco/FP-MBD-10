@@ -1,12 +1,9 @@
-CREATE OR REPLACE PROCEDURE pecat(id_pegawai INT)
+CREATE OR REPLACE PROCEDURE ganti_atasan(id_lama INT, id_baru INT)
 LANGUAGE plpgsql    
 AS $$
 BEGIN
     UPDATE pegawai
-	SET atasan = NULL
-    WHERE atasan = id_pegawai;
-
-	DELETE FROM pegawai
-	WHERE id = id_pegawai;
+	SET atasan = id_baru
+    WHERE atasan = id_lama;
     COMMIT;
 END;$$
