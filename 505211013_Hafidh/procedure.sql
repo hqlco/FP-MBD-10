@@ -1,3 +1,5 @@
+--procedure untuk mengupdate email dari pegawai
+
 CREATE OR REPLACE PROCEDURE update_email(
     pegawai_id int,
     new_email varchar(100)
