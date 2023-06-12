@@ -1,6 +1,6 @@
 -- Menambahkan lagu ke dalam playlist dengan memasukkan nama lagu dan nama playlist
 
-CREATE PROCEDURE addSongtoPlaylist(
+CREATE OR REPLACE PROCEDURE addSongtoPlaylist(
     nama_lagu VARCHAR,
     nama_playlist VARCHAR
 ) AS $$
@@ -17,7 +17,8 @@ BEGIN
     END IF;
 
     IF playlist_id IS NULL THEN
-        INSERT INTO playlist (nama) VALUES (nama_playlist) RETURNING id INTO playlist_id;
+        SELECT COUNT(id) + 1 INTO playlist_id FROM playlist;
+        INSERT INTO playlist (id, nama) VALUES (playlist_id, nama_playlist);
     END IF;
 
     -- Tambahkan relasi many-to-many antara lagu-playlist
