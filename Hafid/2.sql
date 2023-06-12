@@ -4,4 +4,4 @@ FROM pegawai a
 INNER JOIN pegawai b ON b.atasan = a.id
 GROUP BY a.id
 ORDER BY jumlah DESC
-LIMIT 1;
+LIMIT 10;
