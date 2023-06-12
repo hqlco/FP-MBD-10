@@ -9,7 +9,8 @@
 |Hammuda Arsyad             |5025211146     |H-mD          |
 
 # LDM
-![FP_MBD-2023-06-10_12-55](https://github.com/hqlco/FP-MBD-10/assets/92217730/60734ea3-93a2-4b38-bdd7-9cfc6b5e6bc6)
+
+![FP_MBD-2023-06-12_11-09](https://github.com/hqlco/FP-MBD-10/assets/111508713/e6397ef3-80e8-4321-820d-5b0a1ab3df4d)
 
 # PDM
 ![FP_MBD_Physical_Export-2023-06-10_12-56](https://github.com/hqlco/FP-MBD-10/assets/92217730/181db183-75d1-4e9d-9a11-38dc6dd75ef7)
