@@ -1,0 +1,1 @@
+CREATE INDEX idx_tanggal_transaksi ON transaksi (tanggal_transaksi);
